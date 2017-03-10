@@ -7,11 +7,11 @@ package com.ekipa.darts.model;
 public class PlayerModel {
 
     private String name;
-    private Long currentScore;
+    private Integer currentScore;
+    private Integer currentThrow;
 
-    public PlayerModel(String name, Long currentScore) {
-        this.name = name;
-        this.currentScore = currentScore;
+    public PlayerModel() {
+
     }
 
     public String getName() {
@@ -22,11 +22,19 @@ public class PlayerModel {
         this.name = name;
     }
 
-    public Long getCurrentScore() {
+    public Integer getCurrentScore() {
         return currentScore;
     }
 
-    public void setCurrentScore(Long currentScore) {
+    public void setCurrentScore(Integer currentScore) {
         this.currentScore = currentScore;
+    }
+
+    public Integer getCurrentThrow() {
+        return currentThrow;
+    }
+
+    public void setCurrentThrow(Integer currentThrow) {
+        this.currentThrow = currentThrow;
     }
 }
